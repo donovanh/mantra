@@ -1,0 +1,714 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E3A2691D1B6ACE0F00C01152 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A2691C1B6ACE0F00C01152 /* AppDelegate.swift */; };
+		E3A2691F1B6ACE0F00C01152 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A2691E1B6ACE0F00C01152 /* ViewController.swift */; };
+		E3A269221B6ACE0F00C01152 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3A269201B6ACE0F00C01152 /* Main.storyboard */; };
+		E3A269241B6ACE0F00C01152 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3A269231B6ACE0F00C01152 /* Images.xcassets */; };
+		E3A269271B6ACE0F00C01152 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3A269251B6ACE0F00C01152 /* LaunchScreen.xib */; };
+		E3A269331B6ACE1000C01152 /* MantraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A269321B6ACE1000C01152 /* MantraTests.swift */; };
+		E3A269461B6ACE3900C01152 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A269451B6ACE3900C01152 /* InterfaceController.swift */; };
+		E3A269481B6ACE3900C01152 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A269471B6ACE3900C01152 /* NotificationController.swift */; };
+		E3A2694A1B6ACE3900C01152 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3A269491B6ACE3900C01152 /* Images.xcassets */; };
+		E3A2694E1B6ACE3900C01152 /* Mantra WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = E3A2694D1B6ACE3900C01152 /* Mantra WatchKit App.app */; };
+		E3A269561B6ACE3900C01152 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3A269541B6ACE3900C01152 /* Interface.storyboard */; };
+		E3A269581B6ACE3900C01152 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3A269571B6ACE3900C01152 /* Images.xcassets */; };
+		E3A2695B1B6ACE3900C01152 /* Mantra WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E3A269401B6ACE3900C01152 /* Mantra WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E3A2692D1B6ACE1000C01152 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3A2690F1B6ACE0F00C01152 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3A269161B6ACE0F00C01152;
+			remoteInfo = Mantra;
+		};
+		E3A2694F1B6ACE3900C01152 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3A2690F1B6ACE0F00C01152 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3A2694C1B6ACE3900C01152;
+			remoteInfo = "Mantra WatchKit App";
+		};
+		E3A269591B6ACE3900C01152 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3A2690F1B6ACE0F00C01152 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3A2693F1B6ACE3900C01152;
+			remoteInfo = "Mantra WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E3A269621B6ACE3900C01152 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E3A2695B1B6ACE3900C01152 /* Mantra WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E372310C1B6AD14A000ADE9F /* Mantra.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Mantra.entitlements; sourceTree = "<group>"; };
+		E372310D1B6AD174000ADE9F /* Mantra WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Mantra WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		E3A269171B6ACE0F00C01152 /* Mantra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mantra.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3A2691B1B6ACE0F00C01152 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3A2691C1B6ACE0F00C01152 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E3A2691E1B6ACE0F00C01152 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E3A269211B6ACE0F00C01152 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E3A269231B6ACE0F00C01152 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E3A269261B6ACE0F00C01152 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E3A2692C1B6ACE1000C01152 /* MantraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MantraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3A269311B6ACE1000C01152 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3A269321B6ACE1000C01152 /* MantraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MantraTests.swift; sourceTree = "<group>"; };
+		E3A269401B6ACE3900C01152 /* Mantra WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Mantra WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3A269431B6ACE3900C01152 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3A269441B6ACE3900C01152 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		E3A269451B6ACE3900C01152 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		E3A269471B6ACE3900C01152 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		E3A269491B6ACE3900C01152 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E3A2694D1B6ACE3900C01152 /* Mantra WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mantra WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3A269531B6ACE3900C01152 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3A269551B6ACE3900C01152 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		E3A269571B6ACE3900C01152 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E3A269141B6ACE0F00C01152 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3A269291B6ACE1000C01152 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3A2693D1B6ACE3900C01152 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E3A2690E1B6ACE0F00C01152 = {
+			isa = PBXGroup;
+			children = (
+				E3A269191B6ACE0F00C01152 /* Mantra */,
+				E3A2692F1B6ACE1000C01152 /* MantraTests */,
+				E3A269411B6ACE3900C01152 /* Mantra WatchKit Extension */,
+				E3A269511B6ACE3900C01152 /* Mantra WatchKit App */,
+				E3A269181B6ACE0F00C01152 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E3A269181B6ACE0F00C01152 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E3A269171B6ACE0F00C01152 /* Mantra.app */,
+				E3A2692C1B6ACE1000C01152 /* MantraTests.xctest */,
+				E3A269401B6ACE3900C01152 /* Mantra WatchKit Extension.appex */,
+				E3A2694D1B6ACE3900C01152 /* Mantra WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E3A269191B6ACE0F00C01152 /* Mantra */ = {
+			isa = PBXGroup;
+			children = (
+				E372310C1B6AD14A000ADE9F /* Mantra.entitlements */,
+				E3A2691C1B6ACE0F00C01152 /* AppDelegate.swift */,
+				E3A2691E1B6ACE0F00C01152 /* ViewController.swift */,
+				E3A269201B6ACE0F00C01152 /* Main.storyboard */,
+				E3A269231B6ACE0F00C01152 /* Images.xcassets */,
+				E3A269251B6ACE0F00C01152 /* LaunchScreen.xib */,
+				E3A2691A1B6ACE0F00C01152 /* Supporting Files */,
+			);
+			path = Mantra;
+			sourceTree = "<group>";
+		};
+		E3A2691A1B6ACE0F00C01152 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E3A2691B1B6ACE0F00C01152 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E3A2692F1B6ACE1000C01152 /* MantraTests */ = {
+			isa = PBXGroup;
+			children = (
+				E3A269321B6ACE1000C01152 /* MantraTests.swift */,
+				E3A269301B6ACE1000C01152 /* Supporting Files */,
+			);
+			path = MantraTests;
+			sourceTree = "<group>";
+		};
+		E3A269301B6ACE1000C01152 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E3A269311B6ACE1000C01152 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E3A269411B6ACE3900C01152 /* Mantra WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E372310D1B6AD174000ADE9F /* Mantra WatchKit Extension.entitlements */,
+				E3A269451B6ACE3900C01152 /* InterfaceController.swift */,
+				E3A269471B6ACE3900C01152 /* NotificationController.swift */,
+				E3A269491B6ACE3900C01152 /* Images.xcassets */,
+				E3A269421B6ACE3900C01152 /* Supporting Files */,
+			);
+			path = "Mantra WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		E3A269421B6ACE3900C01152 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E3A269431B6ACE3900C01152 /* Info.plist */,
+				E3A269441B6ACE3900C01152 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E3A269511B6ACE3900C01152 /* Mantra WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				E3A269541B6ACE3900C01152 /* Interface.storyboard */,
+				E3A269571B6ACE3900C01152 /* Images.xcassets */,
+				E3A269521B6ACE3900C01152 /* Supporting Files */,
+			);
+			path = "Mantra WatchKit App";
+			sourceTree = "<group>";
+		};
+		E3A269521B6ACE3900C01152 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E3A269531B6ACE3900C01152 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E3A269161B6ACE0F00C01152 /* Mantra */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3A269361B6ACE1000C01152 /* Build configuration list for PBXNativeTarget "Mantra" */;
+			buildPhases = (
+				E3A269131B6ACE0F00C01152 /* Sources */,
+				E3A269141B6ACE0F00C01152 /* Frameworks */,
+				E3A269151B6ACE0F00C01152 /* Resources */,
+				E3A269621B6ACE3900C01152 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3A2695A1B6ACE3900C01152 /* PBXTargetDependency */,
+			);
+			name = Mantra;
+			productName = Mantra;
+			productReference = E3A269171B6ACE0F00C01152 /* Mantra.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E3A2692B1B6ACE1000C01152 /* MantraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3A269391B6ACE1000C01152 /* Build configuration list for PBXNativeTarget "MantraTests" */;
+			buildPhases = (
+				E3A269281B6ACE1000C01152 /* Sources */,
+				E3A269291B6ACE1000C01152 /* Frameworks */,
+				E3A2692A1B6ACE1000C01152 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3A2692E1B6ACE1000C01152 /* PBXTargetDependency */,
+			);
+			name = MantraTests;
+			productName = MantraTests;
+			productReference = E3A2692C1B6ACE1000C01152 /* MantraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E3A2693F1B6ACE3900C01152 /* Mantra WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3A2695F1B6ACE3900C01152 /* Build configuration list for PBXNativeTarget "Mantra WatchKit Extension" */;
+			buildPhases = (
+				E3A2693C1B6ACE3900C01152 /* Sources */,
+				E3A2693D1B6ACE3900C01152 /* Frameworks */,
+				E3A2693E1B6ACE3900C01152 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3A269501B6ACE3900C01152 /* PBXTargetDependency */,
+			);
+			name = "Mantra WatchKit Extension";
+			productName = "Mantra WatchKit Extension";
+			productReference = E3A269401B6ACE3900C01152 /* Mantra WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		E3A2694C1B6ACE3900C01152 /* Mantra WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3A2695C1B6ACE3900C01152 /* Build configuration list for PBXNativeTarget "Mantra WatchKit App" */;
+			buildPhases = (
+				E3A2694B1B6ACE3900C01152 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mantra WatchKit App";
+			productName = "Mantra WatchKit App";
+			productReference = E3A2694D1B6ACE3900C01152 /* Mantra WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E3A2690F1B6ACE0F00C01152 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Donovan Hutchinson";
+				TargetAttributes = {
+					E3A269161B6ACE0F00C01152 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = FNH85CZ738;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					E3A2692B1B6ACE1000C01152 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = E3A269161B6ACE0F00C01152;
+					};
+					E3A2693F1B6ACE3900C01152 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = FNH85CZ738;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					E3A2694C1B6ACE3900C01152 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = E3A269121B6ACE0F00C01152 /* Build configuration list for PBXProject "Mantra" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E3A2690E1B6ACE0F00C01152;
+			productRefGroup = E3A269181B6ACE0F00C01152 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E3A269161B6ACE0F00C01152 /* Mantra */,
+				E3A2692B1B6ACE1000C01152 /* MantraTests */,
+				E3A2693F1B6ACE3900C01152 /* Mantra WatchKit Extension */,
+				E3A2694C1B6ACE3900C01152 /* Mantra WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E3A269151B6ACE0F00C01152 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3A269221B6ACE0F00C01152 /* Main.storyboard in Resources */,
+				E3A269271B6ACE0F00C01152 /* LaunchScreen.xib in Resources */,
+				E3A269241B6ACE0F00C01152 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3A2692A1B6ACE1000C01152 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3A2693E1B6ACE3900C01152 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3A2694A1B6ACE3900C01152 /* Images.xcassets in Resources */,
+				E3A2694E1B6ACE3900C01152 /* Mantra WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3A2694B1B6ACE3900C01152 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3A269561B6ACE3900C01152 /* Interface.storyboard in Resources */,
+				E3A269581B6ACE3900C01152 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E3A269131B6ACE0F00C01152 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3A2691F1B6ACE0F00C01152 /* ViewController.swift in Sources */,
+				E3A2691D1B6ACE0F00C01152 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3A269281B6ACE1000C01152 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3A269331B6ACE1000C01152 /* MantraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3A2693C1B6ACE3900C01152 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3A269481B6ACE3900C01152 /* NotificationController.swift in Sources */,
+				E3A269461B6ACE3900C01152 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E3A2692E1B6ACE1000C01152 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3A269161B6ACE0F00C01152 /* Mantra */;
+			targetProxy = E3A2692D1B6ACE1000C01152 /* PBXContainerItemProxy */;
+		};
+		E3A269501B6ACE3900C01152 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3A2694C1B6ACE3900C01152 /* Mantra WatchKit App */;
+			targetProxy = E3A2694F1B6ACE3900C01152 /* PBXContainerItemProxy */;
+		};
+		E3A2695A1B6ACE3900C01152 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3A2693F1B6ACE3900C01152 /* Mantra WatchKit Extension */;
+			targetProxy = E3A269591B6ACE3900C01152 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E3A269201B6ACE0F00C01152 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3A269211B6ACE0F00C01152 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E3A269251B6ACE0F00C01152 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3A269261B6ACE0F00C01152 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		E3A269541B6ACE3900C01152 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3A269551B6ACE3900C01152 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E3A269341B6ACE1000C01152 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E3A269351B6ACE1000C01152 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E3A269371B6ACE1000C01152 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Mantra/Mantra.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Mantra/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		E3A269381B6ACE1000C01152 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Mantra/Mantra.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Mantra/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		E3A2693A1B6ACE1000C01152 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MantraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mantra.app/Mantra";
+			};
+			name = Debug;
+		};
+		E3A2693B1B6ACE1000C01152 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MantraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mantra.app/Mantra";
+			};
+			name = Release;
+		};
+		E3A2695D1B6ACE3900C01152 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = Mantra_WatchKit_Extension;
+				INFOPLIST_FILE = "Mantra WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		E3A2695E1B6ACE3900C01152 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = Mantra_WatchKit_Extension;
+				INFOPLIST_FILE = "Mantra WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		E3A269601B6ACE3900C01152 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Mantra WatchKit Extension/Mantra WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Mantra WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E3A269611B6ACE3900C01152 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Mantra WatchKit Extension/Mantra WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Mantra WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E3A269121B6ACE0F00C01152 /* Build configuration list for PBXProject "Mantra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3A269341B6ACE1000C01152 /* Debug */,
+				E3A269351B6ACE1000C01152 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3A269361B6ACE1000C01152 /* Build configuration list for PBXNativeTarget "Mantra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3A269371B6ACE1000C01152 /* Debug */,
+				E3A269381B6ACE1000C01152 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3A269391B6ACE1000C01152 /* Build configuration list for PBXNativeTarget "MantraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3A2693A1B6ACE1000C01152 /* Debug */,
+				E3A2693B1B6ACE1000C01152 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3A2695C1B6ACE3900C01152 /* Build configuration list for PBXNativeTarget "Mantra WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3A2695D1B6ACE3900C01152 /* Debug */,
+				E3A2695E1B6ACE3900C01152 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3A2695F1B6ACE3900C01152 /* Build configuration list for PBXNativeTarget "Mantra WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3A269601B6ACE3900C01152 /* Debug */,
+				E3A269611B6ACE3900C01152 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E3A2690F1B6ACE0F00C01152 /* Project object */;
+}
