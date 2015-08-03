@@ -16,7 +16,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        // Background Fetch initialisation
+        let settings = UIUserNotificationSettings(forTypes: UIUserNotificationType.Alert | UIUserNotificationType.Sound, categories: nil)
+        UIApplication.sharedApplication().registerUserNotificationSettings(settings)
+        UIApplication.sharedApplication().setMinimumBackgroundFetchInterval(UIApplicationBackgroundFetchIntervalMinimum)
+        
         return true
+    }
+    
+    /* Respond to background fetch event */
+    func application(application: UIApplication, performFetchWithCompletionHandler completionHandler: (UIBackgroundFetchResult) -> Void) {
+        println("Complete");
+        completionHandler(UIBackgroundFetchResult.NewData)
+        
+        sendLocalNotification();
+    }
+    
+    func sendLocalNotification() -> Void {
+        var localNotification:UILocalNotification = UILocalNotification()
+        localNotification.alertAction = "Your Mantra"
+        localNotification.alertBody = "Background fetch happened"
+        localNotification.soundName = UILocalNotificationDefaultSoundName
+        localNotification.fireDate = NSDate(timeIntervalSinceNow: 10)
+        UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
     }
 
     func applicationWillResignActive(application: UIApplication) {

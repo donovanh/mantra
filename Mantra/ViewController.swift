@@ -23,9 +23,18 @@ class ViewController: UIViewController {
             lblActive.text = "Active"
         } else {
             defaults?.setBool(false, forKey: "currentActiveStatus")
-            lblActive.text = "Not active"
+            lblActive.text = "Inactive"
         }
         
+    }
+    
+    @IBAction func btnNotification(sender: AnyObject) {
+        var localNotification:UILocalNotification = UILocalNotification()
+        localNotification.alertAction = "Your Mantra"
+        localNotification.alertBody = "Test local notification"
+        localNotification.soundName = UILocalNotificationDefaultSoundName
+        localNotification.fireDate = NSDate(timeIntervalSinceNow: 10)
+        UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
     }
     
     override func viewDidLoad() {
